@@ -29,6 +29,7 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 * the other primary metadata required to run the test.
 */
 public class RunWebSuiteTest {
+	
 
 
 }
