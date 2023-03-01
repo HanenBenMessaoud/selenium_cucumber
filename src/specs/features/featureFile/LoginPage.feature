@@ -8,4 +8,4 @@ Feature: Authentification sur lapplication nopcommerce
     When Je remplis l email "admin@yourstore.com"
     And Je remplis le pass word "admin"
     And Je clique sur le buton LOGIN
-    Then Je me redirige vers la page home ""
+    Then Je me redirige vers la page home "Dashboard"

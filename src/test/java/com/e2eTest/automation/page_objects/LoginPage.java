@@ -1,5 +1,6 @@
 package com.e2eTest.automation.page_objects;
 
+//import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
@@ -8,9 +9,13 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.e2eTest.automation.utils.Setup;
 
+//import org.openqa.selenium.support.AbstractFindByBuilder;
+
+
+
 public class LoginPage {
-	
 	/* Retrieve Element */
+	
 	@CacheLookup
 	@FindBy(how = How.ID, using = "Email")
 	public static WebElement email;
@@ -23,8 +28,11 @@ public class LoginPage {
 	@FindBy(how = How.XPATH, using = "//button[@type='submit']")
 	public static WebElement btnlogin;
 	
+	@FindBy(how = How.XPATH, using = "//h1[contains(text(),'Dashboard')]")
+	public static WebElement titlePage;
+	
 	public LoginPage(){
-		PageFactory.initElements(Setup.getDriver(), this);	
+		PageFactory.initElements(Setup.getDriver(), this);
 	}
 	
 	/* Create methods*/
@@ -45,4 +53,5 @@ public class LoginPage {
 	public void clickOnBtnLogin() {
 		btnlogin.click();
 	}
+
 }

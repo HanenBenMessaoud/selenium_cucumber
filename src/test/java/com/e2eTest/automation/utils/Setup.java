@@ -8,6 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 
+
 import io.cucumber.java.Before;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -61,5 +62,6 @@ public class Setup {
 	public static WebDriver getDriver() {
 		return driver;
 	}
+	
 
 }
